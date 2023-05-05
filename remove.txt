@@ -1,0 +1,9 @@
+kernel/samsung/universal9611
+device/samsung/universal9611-common
+vendor/samsung/a51
+vendor/samsung/universal9611-common
+hardware/samsung
+device/samsung_slsi/sepolicy
+hardware/samsung_slsi/libbt
+hardware/samsung_slsi/scsc_wifibt/wifi_hal
+hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
