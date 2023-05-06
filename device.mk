@@ -21,7 +21,9 @@ $(call inherit-product, device/samsung/universal9611-common/common.mk)
 # Inherit A51 blobs
 $(call inherit-product, vendor/samsung/a51/a51-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+	$(DEVICE_PATH)/overlay \
+	$(DEVICE_PATH)/overlay-elixir
 
 # Screen H/W
 TARGET_SCREEN_HEIGHT := 2400

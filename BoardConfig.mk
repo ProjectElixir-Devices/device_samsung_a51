@@ -21,6 +21,8 @@ include device/samsung/universal9611-common/BoardConfigCommon.mk
 # Inherit optional vendor BoardConfig
 -include vendor/samsung/a51/BoardConfigVendor.mk
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # OTA Asserts
 TARGET_OTA_ASSERT_DEVICE := a51,a51dd,a51nsxx
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
