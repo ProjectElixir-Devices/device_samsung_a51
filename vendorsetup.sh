@@ -12,6 +12,10 @@ git clone https://github.com/ProjectElixir-Devices/device_samsung_universal9611-
 rm -rf vendor/samsung/a51
 git clone https://github.com/Exynos9611-Development/vendor_samsung_a51 vendor/samsung/a51 --depth 1
 
+# Some additional interfaces
+rm -rf hardware/samsung-ext/interfaces
+git clone https://github.com/Exynos9611-Development/hardware_samsung-extra_interfaces/ hardware/samsung-ext/interfaces --depth 1
+
 # Common vendor blobs for Universal9611
 rm -rf vendor/samsung/universal9611-common
 git clone https://github.com/Exynos9611-Development/vendor_samsung_universal9611-common vendor/samsung/universal9611-common --depth 1
@@ -22,7 +26,7 @@ git clone https://github.com/ProjectElixir-Devices/hardware_samsung hardware/sam
 
 # SLSI Sepolicy
 rm -rf device/samsung_slsi/sepolicy
-git clone https://github.com/LeafOS-Devices/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy --depth 1
+git clone https://github.com/roynatech2544/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy --depth 1
 
 # Clone bluetooth lib from slsi sources
 rm -rf hardware/samsung_slsi/libbt
