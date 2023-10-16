@@ -34,6 +34,8 @@ git clone https://github.com/DragonFox-Project/android_device_samsung_slsi_sepol
 rm -rf hardware/samsung_slsi/
 git clone https://github.com/DragonFox-Project/hardware_samsung_slsi hardware/samsung_slsi/ --depth 1
 
+rm -rf hardware/samsung_slsi-linaro/
+
 # Linaro Config
 rm -rf hardware/samsung_slsi-linaro/config
 git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_config hardware/samsung_slsi-linaro/config --depth 1
