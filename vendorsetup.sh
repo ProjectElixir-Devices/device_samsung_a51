@@ -50,7 +50,7 @@ git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exyn
 
 # Linaro OSS Graphical stack
 rm -rf hardware/samsung_slsi-linaro/graphics
-git clone https://github.com/DragonFox-Project/android_hardware_samsung_slsi-linaro_graphics hardware/samsung_slsi-linaro/graphics --depth 1
+git clone https://github.com/DragonFox-Project/android_hardware_samsung_slsi-linaro_graphics hardware/samsung_slsi-linaro/graphics --depth 1 -b evo-udc/slsi-q
 
 # Linaro OSS openmax stack
 rm -rf hardware/samsung_slsi-linaro/openmax
