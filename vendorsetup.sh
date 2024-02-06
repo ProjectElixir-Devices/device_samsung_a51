@@ -11,20 +11,13 @@ git clone --depth=1 https://github.com/Roynas-Android-Playground/kernel_samsung_
 rm -rf hardware/samsung-ext/interfaces
 git clone --depth=1 https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces -b master hardware/samsung-ext/interfaces
 
-rm -rf hardware/samsung_slsi-linaro/config
-git clone --depth=1 https://github.com/Roynas-Android-Playground/android_hardware_samsung_slsi-linaro_config -b lineage-21.0 hardware/samsung_slsi-linaro/config
-
-rm -rf hardware/samsung_slsi-linaro/exynos
-git clone --depth=1 https://github.com/Roynas-Android-Playground/android_hardware_samsung_slsi-linaro_exynos  -b lineage-21.0 hardware/samsung_slsi-linaro/exynos
-
-rm -rf hardware/samsung_slsi-linaro/graphics
-git clone --depth 1 https://github.com/Roynas-Android-Playground/android_hardware_samsung_slsi-linaro_graphics -b lineage-21.0 hardware/samsung_slsi-linaro/graphics 
-
-rm -rf hardware/samsung_slsi-linaro/openmax
-git clone --depth=1 https://github.com/Roynas-Android-Playground/android_hardware_samsung_slsi-linaro_openmax -b lineage-21.0 hardware/samsung_slsi-linaro/openmax
-
-rm -rf hardware/samsung_slsi-linaro/interfaces
-git clone --depth=1 https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_interfaces -b lineage-21 hardware/samsung_slsi-linaro/interfaces
+rm -rf hardware/samsung_slsi-linaro
+git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_graphics.git hardware/samsung_slsi-linaro/graphics
+git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_config.git hardware/samsung_slsi-linaro/config
+git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_exynos.git hardware/samsung_slsi-linaro/exynos
+git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_openmax.git hardware/samsung_slsi-linaro/openmax
+git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_exynos5.git hardware/samsung_slsi-linaro/exynos5
+git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_interfaces.git hardware/samsung_slsi-linaro/interfaces
 
 rm -rf device/samsung_slsi/sepolicy
 git clone --depth=1 https://github.com/Roynas-Android-Playground/android_device_samsung_slsi_sepolicy -b lineage-21 device/samsung_slsi/sepolicy
